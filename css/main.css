@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alatsi', sans-serif;
+
+}
+
+body{
+    /* max-width: 1920px;
+    max-height: 1080px;
+    min-height: 100%;
+    min-width: 100%;
+    margin: auto; */
+    background: url(/imagens/background_img.jpg); 
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+}
+
+.sidemenu{
+    height: 100%;
+    width: 15rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(79, 86, 96, 0.781), rgba(213, 214, 205, 0.781));
+    margin-left: -15rem;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.sidemenu ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 5rem;
+    margin-left: 3rem;
+}
+
+.sidemenu a{
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    line-height: 4rem;
+    font-size: 1.8rem;
+    display: block;
+    color: white;
+    }
+
+.sidemenu a:hover{
+    /* color: rgb(100, 216, 100); */
+    color: #8DE97E;
+    transition: color 0.425s;
+}
+
+.ballIcon{
+    width: 3rem;
+    height: 3rem;
+    transition: 0.5s;
+    position: fixed;
+    z-index: 2;
+    bottom: 50%;
+}
+
+.main{
+    color: whitesmoke;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    transition: 0.5s;
+}
+
+p{
+    margin: 1rem;
+    margin-right: 7rem;
+}
+#card-ataque{
+    margin-left: -10000rem;
+}
+
+#card-qb{
+    margin-left: -10000rem;
+    margin-top: -15rem;
+}
+
+#card-wr{
+    margin-left: -10000rem;
+    margin-top: -7rem;
+}
