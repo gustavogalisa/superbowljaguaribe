@@ -27,6 +27,7 @@ function renderQBS(json,filter = ""){
                                 <div class="card-body">
                                     <p class="card-text" >${player.ShortName} </p>
                                     <p class="card-text" >${player.Team}</p>
+                                    <button type="button" class="btn btn-primary">Escolher</button>
                                     <p hidden="true">${player.PlayerID}</p>
                                 </div>
                             </div>
@@ -35,4 +36,5 @@ function renderQBS(json,filter = ""){
         }
     }
 }
+
 

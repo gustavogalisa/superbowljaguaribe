@@ -16,6 +16,7 @@ function closeMenu(){
 
 function ataque(){
     document.getElementById('card-ataque').style.marginLeft = '15rem'
+    document.getElementById('card-ataque').style.visibility = 'visible'
     document.getElementById('main').style.marginLeft = '0'
     document.getElementById('ball').style.marginLeft = '15rem'
     closeQb()
@@ -23,11 +24,12 @@ function ataque(){
 }
 
 function closeAtaque(){
-    document.getElementById('card-ataque').style.marginLeft = '-1000rem'
+    document.getElementById('card-ataque').style.visibility = 'hidden'
 }
 
 function qb(){
     document.getElementById('card-qb').style.marginLeft = '15rem'
+    document.getElementById('card-qb').style.visibility = 'visible'
     document.getElementById('main').style.marginLeft = '0'
     document.getElementById('ball').style.marginLeft = '15rem'
     closeAtaque()
@@ -35,11 +37,12 @@ function qb(){
 }
 
 function closeQb(){
-    document.getElementById('card-qb').style.marginLeft = '-1000rem'
+    document.getElementById('card-qb').style.visibility = 'hidden'
 }
 
 function wr(){
     document.getElementById('card-wr').style.marginLeft = '15rem'
+    document.getElementById('card-wr').style.visibility = 'visible'
     document.getElementById('main').style.marginLeft = '0'
     document.getElementById('ball').style.marginLeft = '15rem'
     closeAtaque()
@@ -47,5 +50,5 @@ function wr(){
 }
 
 function closeWr(){
-    document.getElementById('card-wr').style.marginLeft = '-1000rem'
+    document.getElementById('card-wr').style.visibility = 'hidden'
 }

@@ -15,7 +15,7 @@ body{
     background-position: center center;
     background-repeat:  no-repeat;
     background-attachment: fixed;
-    background-size:  cover;
+    background-size:  cover;  
 }
 
 .sidemenu{
@@ -66,6 +66,11 @@ body{
     padding-top: 3rem;
     padding-left: 3rem;
     transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 p{
@@ -73,15 +78,17 @@ p{
     margin-right: 7rem;
 }
 #card-ataque{
-    margin-left: -10000rem;
+    visibility: hidden;
 }
 
 #card-qb{
-    margin-left: -10000rem;
-    margin-top: -15rem;
+    visibility: hidden;
+    position: relative;
+    /* margin-top: -17rem; */
 }
 
 #card-wr{
-    margin-left: -10000rem;
-    margin-top: -7rem;
+    visibility: hidden;
+    position: relative;
+    /* margin-top: -12rem; */
 }

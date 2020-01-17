@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alatsi', sans-serif;
+
+}
+
+body{
+    background: url(/imagens/game_index_background.jpg); 
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+}
+
+.nav{
+    background-color: black;
+    border: black;
+}
+
+.nav a{
+    color: white;
+}
+
+.tab-content{
+    color: white;
+}
+
+.selection #images{
+    display: flex;
+    flex-wrap: wrap;
+}
+.selection .player{
+    margin: 2rem;
+    text-align: center;
+}
+
+.selection{
+    color: black;
+    margin: 2rem;
+}
+
+#busca{
+    color: white;
+}
+
+.card{
+    margin: 0.5rem;
+}
