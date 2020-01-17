@@ -77,18 +77,10 @@ p{
     margin: 1rem;
     margin-right: 7rem;
 }
-#card-ataque{
-    visibility: hidden;
-}
 
-#card-qb{
+#card-ataque, #card-qb, #card-wr{
     visibility: hidden;
-    position: relative;
-    /* margin-top: -17rem; */
-}
-
-#card-wr{
-    visibility: hidden;
-    position: relative;
-    /* margin-top: -12rem; */
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
 }
