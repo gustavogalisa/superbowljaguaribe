@@ -26,7 +26,7 @@ body{
     color: white;
 }
 
-.selection #images{
+.selection #images, .selection #imagesWR{
     display: flex;
     flex-wrap: wrap;
 }
@@ -40,7 +40,7 @@ body{
     margin: 2rem;
 }
 
-#busca{
+.busca{
     color: white;
 }
 

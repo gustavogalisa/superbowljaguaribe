@@ -21,8 +21,8 @@ function renderQBS(json,filter = ""){
     div_images.innerHTML = ""
     for(let player of json){
         if(player.Active && player.Position === "QB" && player.ShortName.toLowerCase().includes(filter)){
-            let img = `<div class="col-sm-3">
-                            <div class="card"> 
+            let img = `<div class="col-sm-1">
+                            <div class="card mb-3" style="max-width: 64px;"> 
                                 <img src=${player.PhotoUrl} class="card-img-top"/>
                                 <div class="card-body">
                                     <p class="card-text" >${player.ShortName} </p>
