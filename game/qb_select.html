@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/javascript/phaser/box2d-plugin-full.js"></script>
     <script src="/javascript/phaser/phaser.min.js"></script>
+    
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/qb_style.css">
@@ -42,63 +44,18 @@
             </div>
         </div>
         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-            <script>
-                var config = {
-                    type: Phaser.AUTO,
-                    width: 800,
-                    height: 600,
-                    physics: {
-                        default: 'arcade',
-                        arcade: {
-                            gravity: { y: 500 }
-                        }
-                    },
-                    scene: {
-                        preload: preload,
-                        create: create
-                    }
-                };
-            
-                var game = new Phaser.Game(config);
-            
-                function preload ()
-                {
-                    //this.load.setBaseURL('http://labs.phaser.io');
-            
-                    this.load.image('sky', 'http://labs.phaser.io/assets/skies/space3.png');
-                    this.load.image('logo', '/imagens/jaguaribe_final.png');
-                    this.load.image('red', 'http://labs.phaser.io/assets/particles/red.png');
-                }
-            
-                function create ()
-                {
-                    this.add.image(400, 300, 'sky');
-            
-                    var particles = this.add.particles('red');
-            
-                    var emitter = particles.createEmitter({
-                        speed: 100,
-                        scale: { start: 1, end: 0 },
-                        blendMode: 'ADD'
-                    });
-            
-                    var logo = this.physics.add.image(400, 100, 'logo');
-            
-                    logo.setVelocity(100, 200);
-                    logo.setBounce(1, 1);
-                    logo.setCollideWorldBounds(true);
-            
-                    emitter.startFollow(logo);
-                }
-                </script>
 
+            
         </div>
       </div>
+    <script src="/javascript/loading.js"></script>
     <script src="/javascript/api_qb.js"></script>
     <script src="/javascript/api_wr.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
     
 </body>
 </html>
