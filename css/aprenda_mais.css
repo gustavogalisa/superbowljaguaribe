@@ -20,9 +20,14 @@ body{
 
 #texto{
     margin-left: 3rem ;
+    text-align: center;
 }
 
 #enviar{
     margin: 1rem;
     text-align: center;
+}
+
+input{
+    color: white;
 }
