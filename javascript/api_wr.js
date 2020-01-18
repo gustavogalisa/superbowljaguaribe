@@ -32,5 +32,6 @@ function renderWRS(json,filter = ""){
             wr_images.insertAdjacentHTML('beforeend',img)
         }
     }
+    startGame()
 }
 
