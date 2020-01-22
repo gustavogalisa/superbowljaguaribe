@@ -9,6 +9,7 @@ fetch('https://api.sportsdata.io/v3/nfl/scores/json/Players?key=9bb929f203854586
 let div_images = document.querySelector('#images')
 let input = document.querySelector('#qbName')
 let currentQB = document.querySelector('#currentQB')
+let div_QB = document.querySelector('#QB')
 
 let json = []
 let selectedQB = {}
@@ -22,6 +23,7 @@ input.addEventListener('input', () => {
 function atualizaQB(id){
     selectedQB = json.filter( p => p.PlayerID == id)[0]
     currentQB.innerHTML = selectedQB.FirstName + ' ' + selectedQB.LastName
+    div_QB.innerHTML = `<img src=${selectedQB.PhotoUrl} class="card-img-top"/>`
 }
 
 

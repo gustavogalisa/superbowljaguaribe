@@ -1,6 +1,8 @@
 let wr_images = document.querySelector('#imagesWR')
 let wr_input = document.querySelector('#wrName')
 let currentWR = document.querySelector('#currentWR')
+let div_WR1 = document.querySelector('#WR1')
+let div_WR2 = document.querySelector('#WR2')
 
 let selectedWR = []
 
@@ -12,6 +14,8 @@ wr_input.addEventListener('input', () => {
 function atualizaWR(id){
     selectedWR.push(json.filter( p => p.PlayerID == id)[0])
     currentWR.innerHTML = selectedWR.reduce((acc,p)=> acc += p.FirstName + ' ' + p.LastName + '</br>','')
+    div_WR1.innerHTML = `<img src=${selectedWR[0].PhotoUrl} class="card-img-top"/>`
+    div_WR2.innerHTML = `<img src=${selectedWR[1].PhotoUrl} class="card-img-top"/>`
 }
 
 function renderWRS(json,filter = ""){
