@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/javascript/phaser/box2d-plugin-full.js"></script>
-    <script src="/javascript/phaser/phaser.min.js"></script>
+    <!-- <script src="/javascript/phaser/box2d-plugin-full.js"></script> -->
+    <!-- <script src="/javascript/phaser/phaser.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
     
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -45,14 +46,22 @@
         </div>
         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
             <div id="jogo">
-                <div id="QB" class="col-sm-2">
-                    
-                </div>
-                <div id="WR1">
-                    
-                </div>
-                <div id="WR2">
-                    
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <div id="WR1" class = "col col-sm-2 align-self-end">
+                            
+                        </div>
+                    </div>
+                    <div class="row justify-content-start">
+                        <div id="QB" class="col col-sm-2 align-self-start">
+                           
+                        </div>
+                    </div>
+                    <div class="row justify-content-end">   
+                        <div id="WR2" class = "col col-sm-2 align-self-end">
+                            
+                        </div>
+                    </div>
                 </div>
             </div>          
         </div>
