@@ -1,6 +1,7 @@
 fetch('https://api.sportsdata.io/v3/nfl/scores/json/Players?key=9bb929f203854586a80ed06ce03c813a')
 .then(res => res.json())
 .then(j => {
+            document.querySelector("canvas").hidden = true
             json = j
             renderQBS(json)
             renderWRS(json)
