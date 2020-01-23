@@ -5,7 +5,7 @@ var config = {
     physics: {
         default: 'arcade',
         arcade: {
-            gravity: { y: 500 }
+            gravity: { y: 200 }
         }
     },
     scene: {
@@ -23,6 +23,12 @@ function preload ()
     this.load.image('sky', 'http://labs.phaser.io/assets/skies/space3.png');
     this.load.image('logo', '/imagens/jaguaribe_resized.png');
     this.load.image('red', 'http://labs.phaser.io/assets/particles/red.png');
+    
+    // this.load.setBaseURL('http://labs.phaser.io');
+
+        // this.load.image('sky', 'assets/skies/space3.png');
+        // this.load.image('logo', 'assets/sprites/phaser3-logo.png');
+        // this.load.image('red', 'assets/particles/red.png');
 }
 
 function create ()
@@ -34,10 +40,10 @@ function create ()
     var emitter = particles.createEmitter({
         speed: 100,
         scale: { start: 1, end: 0 },
-        blendMode: 'ADD'
+        blendMode: 'NORMAL'
     });
 
-    var logo = this.physics.add.image(400, 100, 'logo');
+    var logo = this.physics.add.image(400, 300, 'logo');
 
     logo.setVelocity(100, 200);
     logo.setBounce(1, 1);
