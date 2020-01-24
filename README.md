@@ -23,9 +23,12 @@ Não encontramos páginas semelhantes.
 
 # Tecnologias
 [JavaScript]
-[Bootstrap](www.getbootstrap.com)
-[Materialize](https://materializecss.com/)
-[Phaser](www.phaser.io)
+
+[Bootstrap - www.getbootstrap.com](www.getbootstrap.com)
+
+[Materialize - https://materializecss.com/](https://materializecss.com/)
+
+[Phaser - www.phaser.io](www.phaser.io)
 
 # API
 
