@@ -78,8 +78,8 @@ body{
     text-align: center;
 }
 .ballIcon{
-    width: 3rem;
-    height: 3rem;
+    width: 5rem;
+    height: 5rem;
     transition: 0.5s;
     
     z-index: 2;

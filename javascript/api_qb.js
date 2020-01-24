@@ -30,7 +30,7 @@ function atualizaQB(id){
     div_QB.innerHTML = `<p id = "randQB">100</p>
                             <img src=${selectedQB.PhotoUrl} class="card-img-top"/>
                             <a href="#" onclick = "testaLancamento()"> 
-                                <img class="ballIcon" src = "/imagens/1578165481347.png"/>
+                                <img class="ballIcon" src = "/imagens/animated_ball.gif"/>
                             </a> `
     timer = setInterval(randomQBPass,interval);
 }
