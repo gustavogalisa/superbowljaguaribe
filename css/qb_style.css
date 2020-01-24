@@ -85,6 +85,12 @@ body{
     z-index: 2;
     /* bottom: 50%; */
 }
+
+.placar{
+    font-size: 5rem;
+    color: white;
+    font-weight: bold;
+}
 /* canvas{
     visibility: hidden;
 } */

@@ -9,8 +9,7 @@ let r1
 let r2
 
 wr_input.addEventListener('input', () => {
-    console.log(input.value)
-    renderWRS(json,input.value.toLowerCase())
+    renderWRS(json,wr_input.value.toLowerCase())
 })
 
 function atualizaWR(id){
