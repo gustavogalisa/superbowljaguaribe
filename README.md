@@ -45,3 +45,7 @@ QB Selection
 Tela principal do jogo
 
 ![Tela principal do jogo](https://github.com/gustavogalisa/superbowljaguaribe/blob/master/Telas/game_screen.PNG)
+
+Tela de error 404
+
+![Tela de error 404](https://github.com/gustavogalisa/superbowljaguaribe/blob/master/Telas/error404.PNG)
