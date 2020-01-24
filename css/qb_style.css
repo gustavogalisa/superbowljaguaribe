@@ -91,6 +91,38 @@ body{
     color: white;
     font-weight: bold;
 }
-/* canvas{
-    visibility: hidden;
-} */
+
+.card{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: rgb(5, 9, 68) solid 2px;
+    background-image: linear-gradient(to bottom right, red, blue);
+}
+
+.card-body{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-info{
+    width: 100%;
+}
+
+.card-text{
+    width: 100%;
+    color: honeydew;
+    font-weight: 600;
+    text-align: left;
+}
+
+.card-img-top{
+    background-color: white;
+}
+
+.nfl-logo{
+    min-width: 50%;
+    min-height: 50%;
+    padding-top: 0.5rem;
+    text-align: center;
+}

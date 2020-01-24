@@ -31,9 +31,12 @@ function renderWRS(json,filter = ""){
                             <div class="card"> 
                                 <img src=${player.PhotoUrl} class="card-img-top"/>
                                 <div class="card-body">
-                                    <p class="card-text" >${player.ShortName} </p>
-                                    <p class="card-text" >${player.Team}</p>
-                                    <button onclick = "atualizaWR(${player.PlayerID})" type="button" class="btn btn-primary">Escolher</button>
+                                    <div class="card-info">
+                                        <p class="card-text" >Player: ${player.ShortName} </p>
+                                        <p class="card-text" >Team: ${player.Team}</p>
+                                        <button onclick = "atualizaWR(${player.PlayerID})" type="button" class="btn btn-primary">Escolher</button>
+                                    </div>
+                                    <div class="nfl-logo"><img src="/imagens/nfl_logo_peq.png" width=70%></div>
                                     <p hidden="true">${player.PlayerID}</p>
                                 </div>
                             </div>
