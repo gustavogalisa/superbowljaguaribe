@@ -11,6 +11,9 @@ let div_images = document.querySelector('#images')
 let input = document.querySelector('#qbName')
 let currentQB = document.querySelector('#currentQB')
 let div_QB = document.querySelector('#QB')
+let q1 = 0
+let timer = ''
+let interval = 500
 
 let json = []
 let selectedQB = {}
@@ -24,7 +27,33 @@ input.addEventListener('input', () => {
 function atualizaQB(id){
     selectedQB = json.filter( p => p.PlayerID == id)[0]
     currentQB.innerHTML = selectedQB.FirstName + ' ' + selectedQB.LastName
-    div_QB.innerHTML = `<img src=${selectedQB.PhotoUrl} class="card-img-top"/>`
+    div_QB.innerHTML = `<p id = "randQB">100</p>
+                            <img src=${selectedQB.PhotoUrl} class="card-img-top"/>
+                            <a href="#" onclick = "testaLancamento()"> 
+                                <img class="ballIcon" src = "/imagens/1578165481347.png"/>
+                            </a> `
+    timer = setInterval(randomQBPass,interval);
+}
+
+function randomQBPass(){
+    q1 = getRandomIntInclusive(50,100)
+    document.querySelector('#randQB').innerHTML = q1
+}
+
+function testaLancamento(){
+    clearInterval(timer)
+    let diff1 = Math.abs(r1-q1)
+    let diff2 = Math.abs(r2-q1)
+    console.log(diff1,diff2)
+
+    if( diff1 <= 5 || diff2 <= 5){
+        alert("TOUCHDOWN")
+        interval-=100
+    }else{
+        alert("INTERCEPTAÇÃO")
+        interval+=100
+    }
+    timer = setInterval(randomQBPass,interval)
 }
 
 
@@ -47,5 +76,6 @@ function renderQBS(json,filter = ""){
         }
     }
 }
+
 
 
