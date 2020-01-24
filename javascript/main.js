@@ -1,3 +1,6 @@
+function playMusic(){
+    document.getElementById("musica").play()
+}
 function openMenu(){
     document.getElementById('sideMenu').style.marginLeft = '0'
     document.getElementById('main').style.marginLeft = '15rem'

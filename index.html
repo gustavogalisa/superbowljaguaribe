@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="/css/main.css">
     <script src="/javascript/main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/imagens/favicon.png">
     <title>Superbowl Jaguaribe</title>
 </head>
 <body>
+    <audio src="/audio/best_tune.mp3" id="musica" loop="loop"></audio>
     <div id="sideMenu" class="sidemenu">
         <ul>
             <li><a href="#" onclick="ataque()">Ataque</a></li>
             <li><a href="#" onclick="qb()">Quarterback</a></li>
             <li><a href="#" onclick="wr()">Wide Receiver</a></li>
             <li><a href="#" onclick="window.open('/info/aprenda_mais.html', 'newwindow', 'width=460.8,height=691.2')">Aprenda mais</a></li>
-            <li><a href="#" onclick="window.open('/game/index_game.html', 'newwindow', 'width=800,height=600')">Play</a></li>
+            <li><a href="#" onclick="window.open('/game/index_game.html', 'newwindow', 'width=800,height=600'); playMusic()">Play</a></li>
         </ul>
     </div>
     <img src="/imagens/1578165481347.png" alt="" class="ballIcon" id="ball" onclick="openMenu()"> 
