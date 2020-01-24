@@ -14,12 +14,22 @@ Este projeto tem como finalidade demonstrar o que foi aprendido na disciplina de
 O superbowl é o principal acontecimento no mundo do futebol americano. Ele se compara a uma final de Copa do Mundo, com a vantagem de acontecer todo ano.
 Apaixonados pelo FA e por JS, resolvemos desenvolver uma página que traz algumas informações sobre o esporte, como o ataque é desenvolvido e seus principais atores, quais sejam, o Quarterback e os Wide Receivers.
 Após ler um pouco e aprender sobre o que acontece dentro de um jogo de FA, o usuário pode se cadastrar para receber mais informações e aprender ainda mais.
-E tem mais! Para incentivar a prática do esporte, resolver trazer para o IFPB uma versão especial do Superbowl - o **JAGUARIBE BOWL**!!!
+E tem mais! Para incentivar a prática do esporte, resolvemos trazer para o IFPB uma versão especial do Superbowl - o **JAGUARIBE BOWL**!!!
 O Jaguaribe Bowl é o evento esportivo mais importante da cidade. Ao clicar em "start", o usuário poderá escolher um QB e dois WRs de sua preferência, formando o time dos seus sonhos.
 O objetivo do jogo é marcar o máximo de touchdowns que você conseguir e, assim, fazer o placar rodar bastante. O lançamento é concluído com sucesso quando a diferença entre o número do QB e dos WRs é de 5 unidades. Cuidado, se você clicar muito devagar poderá ser interceptado!
 
 # Inspiração
 Não encontramos páginas semelhantes.
+
+# Tecnologias
+[JavaScript]
+[Bootstrap](www.getbootstrap.com)
+[Materialize](https://materializecss.com/)
+[Phaser](www.phaser.io)
+
+# API
+
+https://api.sportsdata.io 
 
 # Telas
 Landing page e menu
